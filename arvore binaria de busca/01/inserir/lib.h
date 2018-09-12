@@ -16,8 +16,10 @@ arv *insere(arv *r, int c){
 		r = novo;
 	}else{
 		arv *aux = r, *ult;
+		
 		while (aux != NULL){
 			ult = aux;
+			//verifica se vai para a esquerda ou direita
 			if(c < aux->v)
 				aux = aux->esq;
 			else
@@ -29,5 +31,7 @@ arv *insere(arv *r, int c){
 		else
 			aux->dir = novo;	
 	}
+	
+	//retorna o r
 	return r;
 }
