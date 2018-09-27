@@ -27,7 +27,9 @@ main(){
 	imprimir(r, 0);
 	
 	printf("\nremove--------------\n");
+	r = remover(r, 15);
 	r = remover(r, 10);
+	//r = remover(r, 200);
 	
 	printf("\nprinta--------------\n");
 	imprimir(r, 0);
@@ -56,11 +58,10 @@ arv *insere(arv *r, int c){
 		aux = ult;
 		if(c < aux->v) {
 			aux->esq = novo;
-			aux->ant = ult;
 		}else {
 			aux->dir = novo;	
-			aux->ant = ult;
 		}
+		novo->ant = ult;
 	}
 	
 	//retorna o r
@@ -71,8 +72,10 @@ void imprimir(arv *r, int a){
 	int i;
 	if(r!=NULL){
 		printf("\n");
-		for(i=0;i<a;i++) printf(" ");
-		printf("%d",r->v);
+		printf    ("no:%d",r->v);
+		if(r->ant != NULL){
+			printf("  ant: %d ",r->ant->v);
+		}
 		imprimir(r->esq,a++);
 		imprimir(r->dir,a++);
 	}
@@ -88,25 +91,33 @@ arv *remover(arv *r, int x){
 	while(r != NULL && x != r->v){
 		if(x > r->v) r = r->dir;
 		if(x < r->v) r = r->esq;
+	
 	}
 	menorADireita = r->dir;
-	
+		
 	if(r == topo){
 		while(menorADireita->esq != NULL){
 			menorADireita = menorADireita->esq;
 		}
 		menorADireita->esq = r->esq;
+		r->esq->ant = menorADireita;
+		r->dir->ant = NULL;
+		free(r);
 		return topo->dir;
 	}else{
 		while(menorADireita->esq != NULL){
 			menorADireita = menorADireita->esq;
 		}
 		menorADireita->esq = r->esq;
+		r->esq->ant = menorADireita;
 		if(r->ant->dir == r){
 			r->ant->dir = r->dir;
+			menorADireita->ant = r->ant;
 		}else if(r->ant->esq == r){
 			r->ant->esq = r->dir;
+			menorADireita->ant = r->ant;	
 		}		
-		return topo;
-	}
+		free(r);
+		return topo;	
+	}	
 }
