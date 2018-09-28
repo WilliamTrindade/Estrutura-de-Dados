@@ -12,3 +12,7 @@ _______________________________________________________
 -Quando se encontra um cotovelo >
 
 rde(rsd + rse) = rotação dupla a esquerda (são feitas duas rotações)
+_______________________________________________________
+-Quando se encontra um cotovelo <
+
+rdd(rse + rsd) = rotação dupla a direita (são feitas duas rotações)
