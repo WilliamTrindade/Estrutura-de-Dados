@@ -11,4 +11,4 @@ rsd = rotação simples a direita
 _______________________________________________________
 -Quando se encontra um cotovelo >
 
-rd = totação dupla (são feitas duas rotações)
+rde(rsd + rse) = rotação dupla a esquerda (são feitas duas rotações)
