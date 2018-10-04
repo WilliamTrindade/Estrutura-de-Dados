@@ -14,7 +14,7 @@ int inserir(int vetor[n], int j){
 	}
 	return ++j;
 	/*
-	jo„o's code
+	jo√£o's code
 	while(x[j/2] < x[j]) {			
 		y=x[j];		
 		x[j]=x[j/2];
@@ -24,12 +24,12 @@ int inserir(int vetor[n], int j){
 	*/
 	/*
 	my firt algorithn
-			indicePai = i / 2;	
-			if(vetor[i] > vetor[indicePai]){
-				auxiliar = vetor[indicePai];
-				vetor[indicePai] = vetor[i];
-				vetor[i] = auxiliar;
-			}
+	indicePai = i / 2;	
+	if(vetor[i] > vetor[indicePai]){
+	 	auxiliar = vetor[indicePai];
+		vetor[indicePai] = vetor[i];
+		vetor[i] = auxiliar;
+	}
 	*/
 	
 }
