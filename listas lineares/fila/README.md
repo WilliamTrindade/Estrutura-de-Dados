@@ -1,3 +1,5 @@
+FIFO (first in, first out):
+
 Operações básicas:
 
 – Insert: para inserir elementos no final da fila;
