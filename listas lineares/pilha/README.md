@@ -1,4 +1,5 @@
 LIFO (Last in, first out):
+
 Operações básicas:
 
 – Push: empilhar elementos no topo;
