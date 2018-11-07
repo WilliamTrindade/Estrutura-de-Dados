@@ -11,3 +11,15 @@
 # Ciclo Euleriano
 
 -É um caminho euleriano que inicia e termina no mesmo nó, nenhum grau pode ser ímpar;
+
+# Caminho Hamiltoniano
+
+-Passar todos os nós, apenas uma vez
+
+# Subgrafo
+
+-Parte de um grafo;
+
+# Algoritmo de Dijkstra
+
+-é um dos algoritmos que calcula o caminho de custo mínimo entre vértices de um grafo;
