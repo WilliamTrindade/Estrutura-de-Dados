@@ -6,7 +6,7 @@
 
 ### Caminho Euleriano
 
--Visita cada aresta aapenas uma vez;
+-Visita cada aresta apenas uma vez;
 
 -Grau impar apenas nos nós de inicio e fim (max = 2) ou nenhum;
 
