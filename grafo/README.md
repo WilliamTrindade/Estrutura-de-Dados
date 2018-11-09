@@ -1,8 +1,12 @@
 # Grafos
 
--Caminho: não há repetições de nós;
+### Caminho
 
--Circuito ou ciclo: n >= 3 e forma um ciclo;
+Não há repetições de nós;
+
+### Circuito ou ciclo
+
+n >= 3 e forma um ciclo;
 
 ### Grafo Ponderado
 
