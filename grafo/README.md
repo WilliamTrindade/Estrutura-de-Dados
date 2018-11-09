@@ -6,7 +6,11 @@
 
 ### Grafo Ponderado
 
-Quando o peso importa
+-Quando o peso importa
+
+### Digrafo
+
+-Grafo Direcionado
 
 ### Caminho Euleriano
 
