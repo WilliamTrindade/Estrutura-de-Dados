@@ -4,6 +4,10 @@
 
 -Circuito ou ciclo: n >= 3 e forma um ciclo;
 
+### Grafo Ponderado
+
+Quando o peso importa
+
 ### Caminho Euleriano
 
 -Visita cada aresta apenas uma vez;
