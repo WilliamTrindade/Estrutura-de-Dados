@@ -1,19 +1,19 @@
-Fila de Prioridade
+# Fila de Prioridade
 
---Implementação em Vetor
+## Implementação em Vetor
 
---O pai é maior que o filho
+## O pai é maior que o filho
 
-Heap
+## Heap
 
-Algoritmo dos indices para:
+## Algoritmo dos indices para:
 
---remover
+### remover
 
 esq = 2 * k;
 
 dir = 2 * k - 1;
 
---inserir
+### inserir
 
 pai = k / 2 (parte inteira)
