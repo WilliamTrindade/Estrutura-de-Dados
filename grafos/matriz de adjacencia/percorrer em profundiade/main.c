@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdio.h>
 #define n 6
+#define inicioDaVisita 0
 
 // matriz e vetor global
 int visitado[n] = {};
@@ -22,7 +23,7 @@ void profundidade(int totalNos, int atual) {
 }
 
 // insere o teste
-void insereTest(int grafo[n][n]) {
+void insereTest() {
 	grafo[0][1] = 1;
 	grafo[0][2] = 1;
 	grafo[1][4] = 1;
@@ -34,7 +35,7 @@ void insereTest(int grafo[n][n]) {
 
 // main
 int main() {
-	insereTest(grafo);
-	profundidade(n, 0);	
+	insereTest();
+	profundidade(n, inicioDaVisita);	
 	return 0;
 }
