@@ -40,17 +40,30 @@ int search(int vetor[], int numero) {
 	int ret = calcula(numero, tamanho);	
 	
 	if(vetor[ret] != numero) {
-		printf("Numero não encontrado!");
+		printf("\nNumero %d nao encontrado!\n", numero);
 	}else {
 		showSearch(vetor[ret], ret);
 		return ret;
 	}
 }
 
+void print(int vetor[]) {
+	int i = 0;
+	printf("\n");
+	while(i<tamanho) {
+		printf("pos: %d - valor: %d\n", i, vetor[i]);
+		++i;
+	}
+	
+}
+
 int main() {
 	
 	insert(vetor, 5);
-	search(vetor, 100);
+	insert(vetor, 32);
+	insert(vetor, 44);
+	search(vetor, 44);
+	print(vetor);
 	return 0;
 	
 }
