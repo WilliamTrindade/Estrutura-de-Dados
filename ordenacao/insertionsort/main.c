@@ -26,7 +26,7 @@ void insertionSort(int vet[]) {
 	
 	while(j<t) {
 		
-		for(i=j;i>=0&&vet[j]<vet[i];i--) {
+		for(i=j; i >= 0 && vet[i] < vet[i-1]; i--) {
 			if(vet[i] < vet[i-1]) {
 				aux = vet[i];
 				vet[i] = vet[i-1];
@@ -41,10 +41,10 @@ void insertionSort(int vet[]) {
 
 int main() {
 	
-	int vet[t] = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+	int vet[t] = {10, 66, 8, 7, 6, 54540, 4, 0, 2, 1};
 	
 	insertionSort(vet);
 	print(vet);
 	return 0;
 	
-}
+} 
