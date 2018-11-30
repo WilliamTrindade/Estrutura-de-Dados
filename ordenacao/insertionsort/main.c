@@ -9,41 +9,47 @@ print(int vet[]) {
 	printf("\n");
 	
 }
-// insertionsort
-void insertionSort(int vet[]) {
-	
-	int aux;
-	
+
+// my insertionsort
+void insertionSortMe(int vet[]) {
+
 	// counts
-	int i = 0, j = 0;
-	
-	if(vet[0] > vet[1]){
-		aux = vet[1];
-		vet[1] = vet[0];
-		vet[0] = aux;
-	}
-	j = 2;
-	
-	while(j<t) {
-		
-		for(i=j; i >= 0 && vet[i] < vet[i-1]; i--) {
-			if(vet[i] < vet[i-1]) {
-				aux = vet[i];
-				vet[i] = vet[i-1];
-				vet[i-1] = aux;
-			}
+	int i = 1, j, aux;	
+	while(i<t) {
+		for(j=i; j >= 0 && vet[j] < vet[j-1]; j--) {
+			aux = vet[j];
+			vet[j] = vet[j-1];
+			vet[j-1] = aux;
 		}
-		
-		j++;
+		i++;
 	}
 	
 }
 
+// teacher insertionsort
+void insertionSortTh(int vet[]) {
+		
+	// counts
+	int i = 1, j, aux;	
+	while(i<t) {
+		aux = vet[i];
+		for(j=i-1; j >= 0 && aux < vet[j]; j--) {
+			vet[j+1] = vet[j];			
+		}
+		vet[j+1] = aux;
+		i++;
+	}
+	
+}
+
+
 int main() {
 	
-	int vet[t] = {10, 66, 8, 7, 6, 54540, 4, 0, 2, 1};
+	int vet[t] = {10, 9, 65, 7, 6, 5, 4, 3, 2, 1};
 	
-	insertionSort(vet);
+	//insertionSortTh(vet);
+	//print(vet);
+	insertionSortMe(vet);
 	print(vet);
 	return 0;
 	
