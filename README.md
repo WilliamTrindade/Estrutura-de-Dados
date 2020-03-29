@@ -1,6 +1,4 @@
-# Estrutura-de-Dados
-Códigos da disciplina de Estrutura de Dados - Material de Estudo
-
+## Data structure   
 https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
 
 http://bigocheatsheet.com/
