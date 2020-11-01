@@ -3,7 +3,7 @@
 #define n 10
 #include"lib.h"
 
-void main(){
+void main() {
 	int vetor[n] = {}, i=0;
 	
 	while(1){

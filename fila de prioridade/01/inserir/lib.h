@@ -1,11 +1,11 @@
-int inserir(int vetor[n], int j){
+int inserir(int vetor[n], int j) {
 	int i = j;
 	int auxiliar, indicePai=0;
 	printf("\nDigite o numero a Inserir: ");
 	scanf("%d", &vetor[i]);
 
 	
-	//percorre o while enquanto o pai for 
+	// percorre o while enquanto o pai for 
 	while(vetor[i/2] < vetor[i]){
 		auxiliar = vetor[i];
 		vetor[i] = vetor[i/2];
@@ -33,10 +33,10 @@ int inserir(int vetor[n], int j){
 	*/
 	
 }
-void imprimir(int vetor[n]){
+void imprimir(int vetor[n]) {
+	system("clear");
 	int i;
 	printf("Pos -  Valor\n");
 	for(i=0;i<n;i++) printf("%d   -   %d\n", i, vetor[i]);
-	system("pause");
-	system("cls");
+	getchar();
 }
