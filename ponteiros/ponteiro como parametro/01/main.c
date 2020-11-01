@@ -3,7 +3,7 @@
 #define n 3
 #include"lib.h"
 	
-main(){
+main() {
 	int vet[n] = {1, 2, 3};
 	mostra(vet, n);
 }
